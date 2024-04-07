@@ -7,6 +7,10 @@ This repository contains a simple implementation of a client-server architecture
 - Server accepts incoming client connections and handles them in separate threads.
 - Client can connect to the server, send messages, and receive responses.
 
+## Additional Features
+
+- **TCP Connection:** The communication between the client and server in this implementation utilizes TCP (Transmission Control Protocol), a reliable and connection-oriented protocol. TCP ensures that data is transmitted reliably and in order between the client and server, making it suitable for applications where data integrity is crucial, such as messaging or file transfer.
+
 ## Requirements
 
 - C compiler (e.g., gcc)
