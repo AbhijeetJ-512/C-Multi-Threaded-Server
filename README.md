@@ -17,12 +17,15 @@ This repository contains a simple implementation of a client-server architecture
 - POSIX-compliant operating system (Linux, Unix, macOS)
 
 ## Usage
-
+Change Directory
+```bash
+cd C-Multi-Threaded-Server
+```
 ### Server
 
 1. Compile the server code:
    ```bash
-   gcc server.c -o server
+   make server
    ```
 2. Run the server with a specified port number:
    ```bash
@@ -36,7 +39,7 @@ This repository contains a simple implementation of a client-server architecture
 
 1. Compile the client code:
    ```bash
-   gcc client.c -o client
+   make client
    ```
 2. Run the server with a specified port number:
    ```bash
@@ -46,7 +49,10 @@ This repository contains a simple implementation of a client-server architecture
     ```bash
     ./client 127.0.0.1 5555
     ```
-
+After execution 
+```bash
+make clean
+```
 ### Important Note
 - Ensure that the specified port is not blocked by any firewall settings or other network configurations.
 - Both the server and client executables need to be running concurrently for communication to occur.
